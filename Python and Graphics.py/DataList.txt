@@ -1,0 +1,7 @@
+('Progress', '120, 0, 0'),
+('Progress (module trailer)', '100, 0, 20'),
+('Module Retriever', '80, 40, 0'),
+('Module Retriever', '80, 20, 20'),
+('Module Retriever', '60, 20, 40'),
+('Exclude', '80, 20, 20'),
+('Exclude', '100, 0, 20'),

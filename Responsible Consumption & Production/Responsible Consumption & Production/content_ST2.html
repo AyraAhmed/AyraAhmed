@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page</title> <!-- name of the tab on the web browser -->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <style> /* created embedded style sheet*/
+/* styling the main */
+        main {
+            display: block;
+            margin-top: 199px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+/* styling the h2 tags */
+        h2 {
+            color: black;
+            text-align: center;
+            margin-top: 20px; 
+            margin-left: 10px;
+        }
+/* styling the h3 tags */
+        h3 {
+            text-decoration: underline;
+            margin-top: 20px; 
+            margin-left: 10px;
+        }
+/* styling the p tags, online forum link and h4 tags */
+        p, a.forum, h4{
+            margin-top: 20px; 
+            margin-left: 10px; 
+        }
+/* styling the quote underneath the pictures */
+        .imageQuote {
+            display: flex; /* flexbox alignment, allowing manipulation of element's alignment, spacing, order within the container */
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; 
+        }
+/* styling the images at the top of the page */
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+/* styling all the images */
+        .picture{
+            border-radius: 5%;
+            margin-right: 20px;
+            display:inline;
+            margin: 0;
+            padding: 0;
+        }
+
+        .picture3{
+            border-radius: 5%;
+            float: right;
+            padding: 5px;
+        }
+
+        .picture4{
+            border-radius: 5%;
+            float: right;
+            padding: 5px;
+        }
+
+        .picture5{
+            border-radius: 5%;
+            float: left;
+            padding: 5px;
+        }
+
+        .picture6{
+            border-radius: 5%;
+            float: left;
+            padding: 5px;
+        }
+/* styling the specific quote to be italic and be in the center */
+        .quote {
+            font-style: italic;
+            text-align: center;
+        }
+/* styling the online forum link before pressed */
+        a.forum{
+            color: rgb(8, 80, 128);
+        }
+/* styling the online forum link after pressed */
+        a.forum:visited{
+            color:brown;
+        }
+/* styling the buttons before pressed */
+        .topPage, .sectionPage, .bottomPage{ 
+            color:rgb(8, 80, 128);
+        }
+/* styling buttons after pressed */
+        .topPage:visited, .sectionPage:visited, .bottomPage:visited{
+            color:brown;
+        }
+/* styling the table */
+        .brandTable{
+            text-align: center;
+            font-size: large;
+        }
+/* styling the table and table data */
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-weight: lighter;
+        }
+/* styling the table data */
+        td { 
+            padding: 5px;
+        }
+/* syling the heading called inside scoop*/
+        .insideScoop{
+            text-align: center;
+        }
+/* styling the heading that is above the table */
+        .title{
+            font-weight: bold;
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+<header>
+<nav>
+    <div class="logo-container">
+        <img src="images/logo1.png" alt="logo" class="pic">
+        <h1>Responsible Consumption & Production</h1>
+    </div>
+    <ul>
+        <li><a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/home.html" target="_blank"> Home</a></li>
+        <li><a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/sitemap.html" target="_blank"> Sitemap </a></li>
+        <li><a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/gallery.html" target="_blank"> Gallery </a></li>
+        <li><a href="https://w1974040.users.ecs.westminster.ac.uk/HJAM!/shop.html" target="_blank"> Shop </a></li>
+        <li><a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/profile.html" target="_blank"> User Profile </a></li>
+        <li><a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/team.html"> Team</a></li>
+        <li><a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/feedback.html"> Feedback Form </a></li>
+    </ul>
+</nav>
+</header>
+<main id="Pagetop"> <!-- allowing the user to go to the top of the page by pressing the button -->
+    <div class="imageQuote">
+        <div class="flex.container"> <!-- used to style the images at top of page -->
+            <img src="images/content.png" alt="a factory of workers making clothes" class="picture" width="300" height="200">
+            <img src="images/content1.png" alt="factory workers protesting" class="picture" width="300" height="200">
+            <img src="images/content2.png" alt="brands that support fast fashion" class="picture" width="300" height="200">
+            <p class="quote"> “If you pay a little more, we can live a little better.”<br> <b>&#45; Sharti Atka, garment worker from Bangladesh.</b></p>
+        </div>
+    </div>
+
+    <h2>HOW YOU CAN HELP?</h2>
+   
+    <h3> Enhance Your Understanding </h3>
+    <button><a href="#Pagebottom" class="bottomPage"> Check out Insider Scoop </a></button> 
+    <!-- button made for user to go to the bottom of the page-->
+   
+   <p> Introduce yourself by investigating the various consequences of rapid fashion, such as environmental degradation, labour exploitation, and societal ramifications. Consult a variety of materials, such as films and documentaries, books, online articles, and educational platforms, to gain a comprehensive grasp of the fashion industry's sustainability challenges. Investigate sustainable fashion concepts such as the use of environmentally friendly materials, adherence to ethical labour standards, and open supply chains, as many companies fail to follow sustainable norms when advertising their brand. Participate in online networks and forums devoted to discussing sustainable fashion, fostering learning, and exchanging knowledge with people who share your passion.</p>
+
+   <img src="images/content3.png" alt="person choosing clothes" class="picture3" width="305" height="210">
+
+   <p> To increase your knowledge about the misconduct in the fashion industry press on the link below which will direct you to an online forum, giving you daily updates through news letters, podcasts and many more</p>
+  
+   <a href="https://www.thesustainablefashionforum.com/" class="forum" target="_blank"> The Sustainable Fashion Forum</a>
+
+   <h3> Buy Less, Choose Well </h3>
+
+   <p> Reassess your shopping patterns and priorities to make the transition from impulse buying to thoughtful consuming. Change your focus from quantity to quality, recognising the long-term worth of each purchase. Prioritise long-lasting, well-made clothing over passing trends, taking into account the craftsmanship and adaptability of each piece. Calculate the cost-per-wear to determine the true value of clothing items and make informed decisions that are consistent with your ideals. Embrace minimalism by creating a wardrobe of basic, timeless pieces that represent your personal style while also contributing to a more sustainable living. </p>
+   
+   <p> To know more about how to Embrace Minimalism press this button below that says 'Embrace Minimalism'</p>
+   <button><a href="#Pagesection" class="sectionPage">Embrace Minimalism</a></button> 
+   <!-- button used for user to go a specific area on the page -->
+
+   <h3> Support Sustainable Brands & Secondhand Shopping </h3>
+   <img src="images/content5.png" alt="secondhand store" class="picture5" width="305" height="210">
+   <p> To reiterate from enhancing your understanding.Explore fashion brands that value sustainability, ethics, and transparency. Conduct extensive research to find brands that value environmentally friendly materials, ethical labour methods, and transparent supplier chains. Certifications and endorsements from recognised organisations are good indicators of a brand's sustainable credentials. Support local and independent designers who provide distinctive, handmade alternatives to mass-produced clothing while minimising environmental effects. Advocate for greater openness in the fashion sector, asking firms to share details about their sustainability plans and practices.</p>
+
+   <h4> Secondhand Shopping </h4>
+   <p> Embrace the lure of secondhand shopping as a more sustainable alternative to rapid fashion. Explore thrift stores, consignment shops, flea markets, and internet marketplaces for pre-loved apparel gems. Experience the thrilling experience of discovering hidden gems and vintage pieces with character and history. Extend the lifecycle of clothing by purchasing lightly worn products, lowering the need for new production and minimising waste. Clothing swaps with friends, family, or community groups can help you freshen your wardrobe while also building a sense of camaraderie and connection.</p>
+
+    <h3 id="Pagesection"> Engage in Clothing Rental or Exchange </h3> 
+    <!-- when pressed would direct user to this area showing embrace minimalism -->
+    <img src="images/content4.png" alt="recycling clothes" class="picture4" width="305" height="210">
+    <p> Exploit the sharing economy by investigating clothes rental businesses and online platforms that provide access to a changing wardrobe of designer things for special events. Enjoy the freedom and variety of renting clothes without the commitment of ownership, while reducing waste and environmental effect. Organise garment exchanges with friends, relatives, or colleagues to exchange lightly used goods and revitalise your wardrobe. Participate in community swap events or clothing exchange parties to meet like-minded people and support circular fashion efforts. Share your positive experiences with clothes rental and exchanging to encourage others to adopt more sustainable consumption methods.</p>
+    
+
+    <h4> Mitigate Textile Overconsumption</h4>
+    <p> To ensure clothing disposal is carried out appropriately, donate gently used clothing to local organisations, shelters, or thrift stores. Sort clothing items according to their condition and quality, reserving damaged or excessively worn garments for recycling or upcycling. Investigate textile recycling programmes and drop-off places in your area that take clothing and fabric remnants for reuse as new materials. When possible, avoid dumping clothing in landfills, taking into account the environmental and social implications of textile waste on global ecosystems and communities. Workshops, seminars, and community awareness activities can help you and others learn about the importance of textile recycling and waste reduction. </p>
+
+    <h3>  Embrace Minimalism</h3>
+    <p> To embrace minimalism principles in your wardrobe, declutter and simplify your clothes collection to focus on necessities and timeless pieces. Adopting a "less is more" mindset and avoiding impulse purchases motivated by trends or marketing hype are examples of mindful consumption. Invest in high-quality, multifunctional clothing that complements your personal style and is built to last. In your clothing choices, prioritise functionality, durability, and comfort, choosing pieces that serve numerous purposes and complement your lifestyle. Investigate minimalist fashion ideas and styling approaches to express your personality while reducing waste and environmental effect. Cultivate a sense of gratitude and contentment with what you already have, recognising the importance of simplicity and intention in your fashion journey.</p>
+
+    <img src="images/content6.png" alt="protest" class="picture6" width="348" height="210">
+
+    <h3 id="Pagebottom"> Spread Awareness</h3> 
+    <!-- when button is pressed would direct user to this area of the page showing the 'spread awareness' section and the table -->
+    <p> Leverage your platform and voice to raise awareness about the environmental and social consequences of rapid fashion, as well as the value of sustainable consumption and production. To reach a larger audience, share articles, infographics, videos, and other educational tools about sustainable fashion via social media platforms, blogs, and online forums. Organise events, workshops, and community gatherings around sustainable fashion, such as clothes swaps, repair cafés, and eco-fashion shows. To amplify your message and reach new audiences, work with influencers, content creators, and activists who are committed to sustainability and social justice. Advocate for sustainability education and awareness efforts in schools, universities, and community organisations, so that future generations may make educated decisions and create positive change in the fashion business.</p>
+
+    <h3 class="insideScoop"> Insider Scoop </h3>
+    <h4 class="brandTable"> Brands that support Fast Fashion <h4>
+    <table> <!-- used table tag to create a table -->
+        <tr> <!-- used table row tags so that the content can be displayed in rows -->
+            <td class="title"> <!-- made two cells one for name of brands and next to that cell is description of the brand -->
+                Zara
+            </td>
+            <td>
+                Zara, a Spanish fast fashion company, was first mentioned in the 1990s for its 15-day turnaround time. Today, it produces over 450 million clothing items daily, making it one of the fastest clothing turnovers in the industry.
+            </td>
+        </tr>
+        <tr>
+            <td class="title"> <!--- put them in the same class so that it can be easier to design the table -->
+                H&M
+            </td>
+            <td>
+                H&M, the world's second-largest fashion retailer, is known for its textile waste, rapid clothing turnover, and unsustainable practices, including harmful chemicals and inhumane working conditions. With over 5,000 stores worldwide, the company faces accusations of inhumane working conditions.
+            </td>
+        </tr>
+        <tr>
+            <td class="title">
+                Forever 21
+            </td>
+            <td>
+                Forever 21, an American clothing company, produces primarily synthetic fabrics, causing significant textile waste and pollution. The company also underpays workers, with some earning as little as &#36;4 an hour, and has been sued for violations. Additionally, the company failed to sign the Bangladesh accord for worker safety and rights.
+            </td>
+        </tr>
+        <tr>
+            <td class="title">
+                Uniqlo 
+            </td>
+            <td>
+                Uniqlo, a Japanese fast fashion company with over 3,000 stores worldwide, uses cheap synthetic materials like rayon, polyester, nylon, and elastane, contributing to plastic and microfibre pollution. The company lacks certification for textiles and has faced labor rights violations, including withholding $5.5 million in severance pay.
+            </td>
+        </tr>
+        <tr>
+            <td class="title">
+                Shein
+            </td>
+            <td>
+                Shein, a popular fast fashion company, has become a major contributor to textile and environmental pollution. The Chinese company sells over 36 million pounds of goods annually and faces copyright infringement issues. To combat negative publicity, Shein launched the "Our Products/Our Planet" campaign, promising 50-100 items per product and only large-scale production when high demand occurs. Chinese online retailer has been questioned by labor watchdogs for claiming factory conditions are certified by international labor standards bodies, despite its low clothing prices.
+            </td>
+        </tr>
+        <tr>
+            <td class="title">
+                Mango 
+            </td>
+            <td>
+                In 2013, a Bangladesh garment factory collapsed, killing over 1,000 workers and injuring 2,400 more. Only nine companies offered compensation, and Mango was not among them. The tragedy led to the creation of the Bangladesh Accord, a global agreement for victims of such accidents.
+            </td>
+        </tr>
+        <tr>
+            <td class="title">
+                ASOS
+            </td>
+            <td>
+                ASOS, a British online retail platform, offers over 850 brands and 7,000 new products and styles weekly to keep up with trends. Its fast fashion business model relies on rapid production of low-quality clothing, which has been criticized for not fitting the way they are advertised. ASOS is popular with younger shoppers due to its fast fashion approach.
+            </td>
+        </tr>
+    </table><br> <!-- added space between the table and the button -->
+    <button><a href="#Pagetop" class="topPage">Go to top of the page</a></button>
+</main>
+<footer>
+    <span class="useful">Useful Links</span><br>
+    <a href="https://w1974040.users.ecs.westminster.ac.uk/HJAM/pageEditor_ST1.html" target="_blank"> Page Editor Student 1</a><br>
+    <a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST2.html" target="_blank"> Page Editor Student 2</a><br>
+    <a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST3.html" target="_blank"> Page Editor Student 3</a><br>
+    <a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST4.html" target="_blank"> Page Editor Student 4</a><br>
+    <p> &copy; w1947450 Ayra Ahmed 2024</p> 
+    <a href="https://www.westminster.ac.uk/about-us/our-university/corporate-information/policies-and-documents-a-z/accessibility-statements-for-university-websites/accessibility-statement-for-sits-evision" target="_blank">Accessibility Statement</a>
+</footer>
+</body>
+</html>

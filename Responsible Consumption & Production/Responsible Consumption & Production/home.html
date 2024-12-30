@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title> <!-- name of the tab on the web browser -->
+    <link rel="stylesheet" href="CSS/Style.css"> <!-- link to external stylesheet-->
+    <style> /* created embedded style sheet*/
+/* styling the whole page, excluding the header and footer */
+    main{
+        display: block;
+        margin-top: 199px; /* so that the text does not hide under the header */
+    }
+/* styling the h2 tags */
+    h2{
+        background-color: #d0ce51;
+        padding: 10px;
+        color: black;
+        text-align: center;
+    }
+/* styling the text underneath the header */
+    .slogan{
+        font-style: italic;
+        text-align: center;
+    }
+/* styling the tiles as a whole */
+    .contentTiles {
+        display: flex; /* flexbox alignment, allowing manipulation of element's alignment, spacing, order within the container */
+        justify-content: center; /* Center the tiles horizontally */
+        gap: 5px; /* Adjust the gap value to make it smaller */
+        flex-wrap: wrap; /* Allow tiles to wrap to the next line */
+        margin-left: 20px;
+    }
+/* style each tile */
+    .tiles {
+        position: relative;
+        width: 200px; /* Adjust width to fit four tiles in a row */
+        overflow: hidden; /* Hide overflowing layOverText */
+    }
+/* style the images from the tiles class */
+    .tiles img {
+        width: 120px; /* Make the images fill the container width */
+        height: auto;
+        transition: opacity 0.3s;
+        margin-bottom: 50px;
+    }
+/* style the images from the tiles class when the user hovers over image */
+    .tiles:hover img {
+        opacity: 0.7; /* transparency level */
+    }
+/* style text that is on top of tile */
+    .layOverText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 170px;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        color: white;
+        opacity: 0; /* transparency level */
+        transition: opacity 0.3s; /* change the image from opaque to transparent with a time duration */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+/* Adds opacity to layOverText when .tiles is hovered */
+    .tiles:hover .layOverText {
+        opacity: 1;
+    }
+/* Sets margin for h2 and p elements within layOverText */
+    .layOverText h2, .layOverText p {
+        margin: 5px 0;
+    }
+/* Styles for buttons within layOverText */
+    .layOverText button {
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer; /* sets appearance when mouse cursor hovers over the element */ 
+        transition: background-color 0.3s, color 0.3s; /* sets up transition effects for changes in the background-color and color */
+    }
+/* Styles for button hover state */
+    .layOverText button:hover {
+        background-color: #555;
+    }
+/* style the text underneath the sub headings */
+    .question{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    </style>
+</head>
+<body>
+<header>
+<!-- nav bar code -->
+<nav>
+    <div class="logo-container"> <!-- div class used to style the header -->
+        <img src="images/logo1.png" alt="logo" class="pic">
+        <h1>Responsible Consumption & Production</h1>
+    </div>
+        <ul> <!-- unordered list used for nav bar -->
+            <li><a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/home.html" target="_blank"> Home</a></li> 
+            <li><a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/sitemap.html" target="_blank"> Sitemap </a></li>
+            <li><a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/gallery.html" target="_blank"> Gallery</a></li>
+            <li><a href="https://w1974040.users.ecs.westminster.ac.uk/HJAM!/shop.html" target="_blank"> Shop</a></li>
+            <li><a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/profile.html" target="_blank"> User Profile </a></li>
+            <li><a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/team.html" target="_blank"> Team</a></li>
+            <li><a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/feedback.html" target="_blank"> Feedback Form </a></li>
+        </ul>
+</nav>
+</header>
+<!-- end of nav bar code -->
+<!-- used target blank to open links on new tab -->
+<main> <!-- used to define the main content of the web page -->
+    <p class="slogan"> "Slow down, dress consciously: Choose quality, not quantity"</p>
+    <h2> What is Responsible Consumption and Production? </h2>
+    <p class="question">
+        Responsible Consumption and Production is one of the Sustainable Development Goals <b>(SDG)</b> established by the United Nations. The aim is to decouple economic growth from environmental degradation by promoting sustainable practices across the entire lifecycle of products and services, from production to consumption to disposal. 
+        </p>
+
+        <p class="question"> Fast fashion is an example of Responsible Consumption and Production,  highlighting the misconduct faced, whether its overconsumption of products or the deteriorating work conditions.Fast Fashion prioritises quantity over quality, resulting in lower-quality garments that have a shorter lifespan. Due to this misconduct, low-cost labor are being relied on in lower countries, where workers face poor working conditions, low wages, and lack of labor rights. Violating principles of responsible production, which prioritises fair labor practices and workers rights.</p> 
+
+<h2> Content Pages </h2> 
+<div class="contentTiles"> <!-- tile for content pages for user to press and directs them to the specific page made by a student -->
+    <a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/content_ST4.html" class="tiles" target="_blank"> <!-- links to each member content page on each tile-->
+        <img src="images/insight.png" alt="Insight">
+        <div class="layOverText"> <!-- this is for the text to be laid over the tile -->
+            <h4>Insight</h4>
+        </div>
+    </a>
+
+    <a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/content_ST3.html" class="tiles" target="_blank">
+        <img src="images/aims.png" alt="Aims">
+        <div class="layOverText">
+            <h4>Aims</h4>
+        </div>
+    </a>
+
+    <a href=https://w1947450.users.ecs.westminster.ac.uk/HJAM!/content_ST2.html class="tiles" target="_blank">
+        <img src="images/help.png" alt="Help">
+        <div class="layOverText">
+            <h4>How you can help? </h4> 
+        </div>
+    </a>
+
+    <a href=https://w1974040.users.ecs.westminster.ac.uk/HJAM!/content_ST1.html class="tiles" target="_blank">
+        <img src="images/mission.png" alt="Mission">
+        <div class="layOverText">
+            <h4>Mission to fix Fast Fashion</h4>
+        </div>
+    </a>
+</div>
+</main>
+<!-- footer code -->
+<footer>
+    <span class="useful">Useful Links</span><br> <!-- used span with the useful class to apply styling to the 'Useful Links label' in footer -->
+    <a href="https://w1974040.users.ecs.westminster.ac.uk/HJAM/pageEditor_ST1.html" target="_blank"> Page Editor Student 1</a><br>
+    <a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST2.html" target="_blank"> Page Editor Student 2</a><br>
+    <a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST3.html" target="_blank"> Page Editor Student 3</a><br>
+    <a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST4.html" target="_blank"> Page Editor Student 4</a><br>
+    <p> &copy; w1947450 Ayra Ahmed 2024</p> 
+    <a href="https://www.westminster.ac.uk/about-us/our-university/corporate-information/policies-and-documents-a-z/accessibility-statements-for-university-websites/accessibility-statement-for-sits-evision" target="_blank">Accessibility Statement</a>
+</footer>
+<!-- end of footer code -->
+<!-- added copy write claim and a link for accessibility statement -->
+</body>
+</html>

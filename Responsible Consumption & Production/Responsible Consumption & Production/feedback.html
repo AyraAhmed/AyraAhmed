@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form </title> <!-- name of the tab on the web browser -->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <style> /* created embedded style sheet*/
+    /* center-align all content within the body and add margin on top */
+        body{
+            text-align: center;
+            margin-top: 200px;
+        }
+/* center-align and color text in elements with class Fedfor*/
+        .FedFor{
+            text-align: center;
+            color:mediumseagreen;
+        }
+/* color h2 tag in dark red*/
+        h2{
+            color:darkred;
+        }
+/* center align and set width for element with id 'main */
+        #main{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+/* add border radius and margin to fieldset elements */
+        fieldset{
+        border-radius: 20px;
+        margin-top: 10px;
+        }
+/* add margin to input, select and textarea elements */
+        input, select, textarea{
+        margin-bottom: 10px;
+        }
+/* style form elements */
+        form{
+            clear: both;
+            padding: 20px;
+            text-align:justify;
+            display: block;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+         /* Hide the "If No" section by default*/
+         #IfNoSection{
+            display: none;
+        }
+/* style for custom submit button */
+        .custom-submit-button {
+        background-color: #4CAF50; /* Green */
+        border-radius: 4px;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px; /* top and bottom is 4 pixels, right and left are 2 pixels */
+        cursor: pointer;
+        }
+/* center-align text within element with id 'preview'*/
+        #preview{
+            text-align: center;
+        }
+/* add margin-bottom to elements with class 'button' */
+        .button{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo-container">
+            <img src="images/logo1.png" alt="logo" class="pic">
+            <h1>Responsible Consumption & Production</h1>
+        </div>
+            <ul>
+                <li><a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/home.html"> Home</a></li>
+                <li><a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/sitemap.html"> Sitemap </a></li>
+                <li><a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/gallery.html"> Gallery</a></li>
+                <li><a href="https://w1974040.users.ecs.westminster.ac.uk/HJAM!/shop.html"> Shop</a></li>
+                <li><a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/profile.html"> User Profile </a></li>
+                <li><a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/team.html"> Team</a></li>
+                <li><a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/feedback.html"> Feedback Form </a></li>
+            </ul>
+    </nav>
+</header>
+    <div id="main"></div>
+    <h1 class="FedFor"> Customer Feedback Form </h1>
+    <h2> Required Fields &#42;</h2>
+<!-- used form tags to create a form -->
+    <form id="myForm" onsubmit="return validateFeedForm()"> <!-- calls back the validateFeedForm function -->
+    <fieldset> <!-- created a fieldset for section, would divide the sections creating a box -->
+        <label for="firstname">&#42; Enter your First Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter first name here" ><br>
+
+        <label for="surname">&#42; Enter your Surname:</label>
+        <input type="text" name="surname" id="surname" placeholder="Enter surname here" ><br>
+
+        <label for="email">&#42; Enter your Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter email here" size="55" ><br>
+    <br>
+        What is your Gender?
+    <br>
+        <input type="radio" name="gender" id="genderMale" value="male" >
+        <label for="genderMale">Male</label>
+
+        <input type="radio" name="gender" id="genderFemale" value="Female" >
+        <label for="genderFemale">Female</label>
+
+        <input type="radio" name="gender" id="genderother" value="other" >
+        <label for="genderother">Prefer not to say</label><br>
+    <br>
+    </fieldset>
+
+    <fieldset>
+        Was this website informative and easy to navigate through?
+    <br>
+        <input type="radio" name="opinion" id="userYes" value="yes">
+        <label for="userYes">Yes</label>
+        <input type="radio" name="opinion" id="userNo" value="no">
+        <label for="userNo">No</label>
+    <br>
+    <div id="IfNoSection"> <!-- created a div for when the user presses no it will pop up with a text area for the user to explain why they pressed no-->
+        <label for="IfNo">&#42; If No, suggest any improvements for the future </label><br>
+        <textarea id="IfNo" name="IfNo" rows="5" cols="35" placeholder="Add your message here..."></textarea>
+    </div>
+    <br>
+    </fieldset>
+
+    <fieldset>
+        How satisfied are you with our services? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"
+        <br>
+        <label for="numberOne"> 1 </label>
+        <input type="radio" name="number" id="numberOne" value="one" >
+       
+
+        <label for="numberTwo"> 2 </label>
+        <input type="radio" name="number" id="numberTwo" value="two" >
+       
+
+        <label for="numberThree"> 3 </label>
+        <input type="radio" name="number" id="numberThree" value="three" >
+       
+
+        <label for="numberFour"> 4 </label>
+        <input type="radio" name="number" id="numberFour" value="four" >
+        
+
+        <label for="numberFive"> 5 </label>
+        <input type="radio" name="number" id="numberFive" value="five" >
+        
+
+        <label for="numberSix"> 6 </label>
+        <input type="radio" name="number" id="numberSix" value="six" >
+       
+        <label for="numberSeven"> 7 </label>
+        <input type="radio" name="number" id="numberSeven" value="seven" >
+        
+
+        <label for="numberEight"> 8 </label>
+        <input type="radio" name="number" id="numberEight" value="eight" >
+      
+
+        <label for="numberNine"> 9 </label>
+        <input type="radio" name="number" id="numberNine" value="nine" >
+        
+
+        <label for="numberTen"> 10 </label>
+        <input type="radio" name="number" id="numberTen" value="Ten" >
+    <br>
+
+        Would you recommend our services? 
+    <br>
+        <input type="radio" name="option" id="userOptionYes" value="yes" >
+        <label for="userOptionYes">Yes</label>
+        <input type="radio" name="option" id="userOptionNo" value="no" >
+        <label for="userOptionNo">No</label>
+    <br>
+    
+    <br> Would you like to receive updates about the website and any offers?<br>
+    <!-- used select and option to create a dropdown -->
+        <select name="offers" id="offers">
+         <option value="yes- via email" selected>Yes - via email</option>
+         <option value="no">No</option>
+        </select>
+
+        <br> 
+
+        <label for="AddQ">Do you have any additional questions or requests?</label>
+        <br>
+        <textarea id="AddQ" name="AddQ" rows="5" cols="35" placeholder="Add your message here..." ></textarea><br>
+    </fieldset>
+        
+        <input type="submit" value="Submit" name="send" class = "custom-submit-button">
+    
+    </form>
+
+    <div id="previewSection" style="display: none"> <!-- preview summary would appear when the user presses submit -->
+        <h2> Your Details: </h2>
+        <div id="preview"></div>
+        <button onclick="submitForm()" class="button">Submit</button> <!-- underneath the preview there would a submit button -->
+        <button onclick="editForm()" class="button">Edit</button> <!-- next to submit would be an edit button for the user to change something in the form -->
+    </div>
+
+    <footer>
+        <span class="useful">Useful Links</span><br>
+        <a href="https://w1974040.users.ecs.westminster.ac.uk/HJAM/pageEditor_ST1.html"> Page Editor Student 1</a><br>
+        <a href="https://w1947450.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST2.html"> Page Editor Student 2</a><br>
+        <a href="https://w1975941.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST3.html"> Page Editor Student 3</a><br>
+        <a href="https://w1973296.users.ecs.westminster.ac.uk/HJAM!/pageEditor_ST4.html"> Page Editor Student 4</a><br>
+        <p> &copy; w1947450 Ayra Ahmed 2024</p> 
+        <a href="https://www.westminster.ac.uk/about-us/our-university/corporate-information/policies-and-documents-a-z/accessibility-statements-for-university-websites/accessibility-statement-for-sits-evision" target="_blank">Accessibility Statement</a>
+    </footer>
+    <script>
+        // this is for the navigation question 
+        // Get the radio buttons for the opinion questions 
+        const opinionYes = document.getElementById('userYes');
+        const opinionNo = document.getElementById('userNo');
+        // Get the If No section 
+        const IfNoSection = document.getElementById('IfNoSection');
+    
+        // Add event listener to the radio buttons this will listen for changes in the two radio buttons
+        opinionYes.addEventListener('change', toggleIfNoSection);
+        opinionNo.addEventListener('change', toggleIfNoSection);
+    
+        // Function to toggle the visibility of the If No section based on the selected option
+        function toggleIfNoSection() {
+            if (opinionNo.checked) {
+                IfNoSection.style.display = 'block'; // text area would be displayed if the user presses no
+            } else {
+                IfNoSection.style.display = 'none'; // text area would not display if the user presses yes 
+            }
+        }
+        // Call the function initially to ensure correct visibility on page load
+        toggleIfNoSection();
+
+        // Validating the feedback form 
+        function validateFeedForm() {
+        // Validation for First Name
+        var firstName = document.getElementById('firstname').value;
+        if (firstName === "" || !isNaN(firstName)) { // if the first name was not entered or they entered numbers 
+            alert("Please enter a valid first name."); // this alert would appear making the user to enter their first name
+            return false;
+        }
+
+        // Validation for Surname
+        var surname = document.getElementById('surname').value;
+        if (surname === "" || !isNaN(surname)) { // if surname was not entered or they entered numbers
+            alert("Please enter a valid surname."); // alert would appear making the user to enter their surname 
+            return false;
+        }
+
+        // Validation for Email
+        var email = document.getElementById('email').value;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // address must start with some characters (letters, numbers, symbols), should have an @ symbol after @ symbol must have even more characters with no empty spaces 
+        if (!emailPattern.test(email)) { // this would check if the email is valid by looking at the email pattern 
+            alert("Please enter a valid email address."); // if its not valid, alert would appear
+            return false;
+        }
+
+       // Validation for the "If No" section
+        if (opinionNo.checked && document.getElementById('IfNo').value.trim() === "") { // if the user pressed np and did not fill out why
+            alert("Please suggest any improvements if you selected 'No' for navigation."); // alert would appear for the user to fill it out
+            return false;
+        }
+        // All validations passed
+        return true;
+    }
+
+        // Form submission 
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Validation check 
+        if (!validateFeedForm()){
+            return; // exit if the validation fails 
+        }
+
+        // Getting form data
+        const formData = new FormData(event.target);
+
+        // display preview section
+        document.getElementById("previewSection").style.display = "block";
+
+        //construct and display the preview 
+        let previewMessage = "<h2>Your Details:</h2>";
+        // Loop through form data and populate preview message
+        formData.forEach((value, key) => {
+            // Capitalize the first letter of the key for better readability makes the inputted data from the suer in normal letters 
+            const capitalizedKey = key.charAt(0).toUpperCase() + key.slice(1);
+            // Append key-value pair to the preview message
+            previewMessage += `<p><strong>${capitalizedKey}:</strong> ${value}</p>`;
+        });
+        // Display the preview message
+        document.getElementById("preview").innerHTML = previewMessage;
+
+        // Set the value of the opinion field based on user's selection
+        if (opinionYes.checked) {
+            formData.set("opinion", "yes");
+        } else if (opinionNo.checked) {
+            formData.set("opinion", "no");
+        }
+
+       // Construct the message for preview
+       // declaring a variable called message 
+        var message = "First Name: " + (formData.get("firstname")) + "\n\n";
+        message += "Surname: " + (formData.get("surname")) + "\n\n";
+        message += "Email: " + (formData.get("email")) + "\n\n";
+        message += "Gender: " + (formData.get("gender")) + "\n\n";
+        message += "Informative and Easy to Navigate: " + (formData.get("opinion")) + "\n\n";
+
+        // Add improvements if provided
+        if (formData.has("IfNo")) {
+            message += "Improvements: " + formData.get("IfNo") + "\n\n";
+        }
+
+        message += "Satisfaction Level: " + (formData.get("number")) + "\n\n";
+        message += "Would Recommend: " + (formData.get("option")) + "\n\n";
+        message += "Receive Updates: " + (formData.get("offers")) + "\n\n";
+        message += "Additional Questions or Requests: " + (formData.get("AddQ")) + "\n\n";
+
+        // Display the message in the preview
+        document.getElementById("preview").innerText = message;
+
+    });
+        // Function to submit the form without editing
+        function submitForm() {
+        // Construct email parameters
+        //reference in report 
+        const formData = new FormData(document.getElementById("myForm"));
+        const recipient = formData.get("email"); // Get user's email from the form
+        const subject = 'Feedback Submission';
+        let body = "";
+
+        // Constructing the message content
+        var message = "First Name: " + (formData.get("firstname")) + "\n\n";
+        message += "Surname: " + (formData.get("surname")) + "\n\n";
+        message += "Email: " + (formData.get("email")) + "\n\n";
+        message += "Gender: " + (formData.get("gender")) + "\n\n";
+        message += "Informative and Easy to Navigate: " + (formData.get("opinion")) + "\n\n";
+
+        // Add improvements if provided
+        if (formData.has("IfNo")) {
+            message += "Improvements: " + formData.get("IfNo") + "\n\n";
+        }
+
+        message += "Satisfaction Level: " + (formData.get("number")) + "\n\n";
+        message += "Would Recommend: " + (formData.get("option")) + "\n\n";
+        message += "Receive Updates: " + (formData.get("offers")) + "\n\n";
+        message += "Additional Questions or Requests: " + (formData.get("AddQ")) + "\n\n";
+
+        // Append the message content to the body
+        body += message;
+
+        // Construct mailto link
+        // reference inside the report 
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        // Open the default email client
+        window.location.href = mailtoLink;
+    }
+
+        function editForm() {
+            // Hide preview section when the user presses the edit button
+            document.getElementById("previewSection").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
